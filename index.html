@@ -41,6 +41,31 @@
         min-height: 40vh;
         padding-top: 1rem;
       }
+      .accordion .card {
+  background-color: transparent;
+  border: none;
+}
+
+.accordion .card-header {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.accordion .card-header h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.accordion .card-header button {
+  color: #333;
+  text-decoration: none;
+  width: 100%;
+}
+
+.accordion .card-body {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+}
     </style>
     <link rel="shortcut icon"
     href="img/logo.png"
@@ -67,11 +92,11 @@
                 <ul class="dropdown-menu border border-2 border-warning border-top-0 bg-dark row">
                   <li class="dropdown text-center"><a class="text-decoration-none" href="#">TEMPORADA 1</a></li>
                   <li><hr class="dropdown-divider bg-warning"></li>
-                  <li class="dropdown text-center"><a class="text-decoration-none" href="#">Another action</a></li>
+                  <li class="dropdown text-center"><a class="text-decoration-none" href="#">TEMPORADA 2</a></li>
                   <li><hr class="dropdown-divider bg-warning"></li>
-                  <li class="dropdown text-center"><a class="text-decoration-none" href="#">Something else here</a></li>
+                  <li class="dropdown text-center"><a class="text-decoration-none" href="#">TEMPORADA 3</a></li>
                   <li><hr class="dropdown-divider bg-warning"></li>
-                  <li class="dropdown text-center"><a class="text-decoration-none" href="#">Separated link</a></li>
+                  <li class="dropdown text-center"><a class="text-decoration-none" href="#">TEMPORADA 4</a></li>
                 </ul>
             </li>
             <li class="nav-item align-items-center container-fluid text-center mb-2">
@@ -109,37 +134,37 @@
             <div class="carousel-item active">
               <div class="col-lg-6 col-12 float-start custom-img border-end border-4 border-dark d-flex flex-column justify-content-end" style="background-image: url('./img/new1.jpg');">
                 <a class="btn btn-success col-1 ps-0 pe-5 pt-0 pb-0 mx-auto mb-2">Nuevo</a>
-                <h3 class="col-10 mx-auto text-center text-black fw-bold" style="filter: drop-shadow(0 0 10px rgb(255, 255, 255));">Radio Mare gana premio a la mejor radio escolar</h3>
-                <p class="col-9 mx-auto text-center text-black fw-bold" style="filter: drop-shadow(0 0 10px rgb(255, 255, 255));">La radio del instituto IES Mare Nostrum ha sido reconocida como la mejor radio escolar del país en una competición nacional de radios estudiantiles.</p>
+                <h3 class="col-10 mx-auto text-center text-white w-75">Radio Mare gana premio a la mejor radio escolar</h3>
+                <p class="col-9 mx-auto text-center text-white">La radio del instituto IES Mare Nostrum ha sido reconocida como la mejor radio escolar del país en una competición nacional de radios estudiantiles.</p>
               </div>
               <div class="col-lg-6 col-12 float-start custom-img d-flex flex-column justify-content-end" style="background-image: url('./img/new2.jpg');">
                 <a class="btn btn-warning col-1 ps-1 pe-1 pt-0 pb-0 mx-auto mb-2">Actual</a>
-                <h3 class="col-12 mx-auto text-center text-black fw-bold" style="filter: drop-shadow(0 0 10px rgb(255, 255, 255));">Programa de entrevistas con expertos en tecnología</h3>
-                <p class="col-11 mx-auto text-center text-black fw-bold" style="filter: drop-shadow(0 0 10px rgb(255, 255, 255));">La radio del instituto está lanzando un nuevo programa en el que se entrevistará a expertos en tecnología para brindar a los estudiantes una visión detrás de las últimas tendencias y desarrollos.</p>
+                <h3 class="col-12 mx-auto text-center text-white w-75">Programa de entrevistas con expertos en tecnología</h3>
+                <p class="col-11 mx-auto text-center text-white">La radio del instituto está lanzando un nuevo programa en el que se entrevistará a expertos en tecnología para brindar a los estudiantes una visión detrás de las últimas tendencias y desarrollos.</p>
               </div>
             </div>
             <div class="carousel-item">
               <div class="col-lg-6 col-12 float-start custom-img border-end border-4 border-dark d-flex flex-column justify-content-end" style="background-image: url('./img/new3.jpg');">
                 <a class="btn btn-success col-1 ps-0 pe-5 pt-0 pb-0 mx-auto mb-2">Nuevo</a>
-                <h3 class="col-10 mx-auto text-center text-black fw-bold" style="filter: drop-shadow(0 0 10px rgb(255, 255, 255));">Estudiantes del IES Mare Nostrum producen y presentan su propio programa de radio</h3>
-                <p class="col-9 mx-auto text-center text-black fw-bold" style="filter: drop-shadow(0 0 3px rgb(255, 255, 255));">Los estudiantes del instituto están teniendo la oportunidad de producir y presentar su propio programa de radio, dando a conocer sus habilidades y conocimientos a una audiencia más amplia.</p>
+                <h3 class="col-10 mx-auto text-center text-white w-75">Estudiantes del IES Mare Nostrum producen y presentan su propio programa de radio</h3>
+                <p class="col-9 mx-auto text-center text-white ">Los estudiantes del instituto están teniendo la oportunidad de producir y presentar su propio programa de radio, dando a conocer sus habilidades y conocimientos a una audiencia más amplia.</p>
               </div>
               <div class="col-lg-6 col-12 float-start custom-img d-flex flex-column justify-content-end" style="background-image: url('./img/new4.jpg');">
                 <a class="btn btn-warning col-1 ps-1 pe-1 pt-0 pb-0 mx-auto mb-2">Actual</a>
-                <h3 class="col-12 mx-auto text-center text-black fw-bold" style="filter: drop-shadow(0 0 30px rgb(255, 255, 255));">La radio del instituto transmite en vivo el acto de graduación</h3>
-                <p class="col-11 mx-auto text-center text-black fw-bold" style="filter: drop-shadow(0 0 3px rgb(255, 255, 255));">La radio del instituto estará transmitiendo en vivo el acto de graduación, permitiendo a familiares y amigos que no puedan asistir en persona seguir la celebración desde cualquier lugar del mundo.</p>
+                <h3 class="col-12 mx-auto text-center text-white  w-75">La radio del instituto transmite en vivo el acto de graduación</h3>
+                <p class="col-11 mx-auto text-center text-white">La radio del instituto estará transmitiendo en vivo el acto de graduación, permitiendo a familiares y amigos que no puedan asistir en persona seguir la celebración desde cualquier lugar del mundo.</p>
               </div>
             </div>
             <div class="carousel-item">
               <div class="col-lg-6 col-12 float-start custom-img border-end border-4 border-dark d-flex flex-column justify-content-end" style="background-image: url('./img/new5.jpg');">
                 <a class="btn btn-danger col-1 ps-0 pe-1 pt-0 pb-0 mx-auto mb-2">Viejo</a>
-                <h3 class="col-10 mx-auto text-center text-black fw-bold" style="filter: drop-shadow(0 0 10px rgb(255, 255, 255));">La radio del instituto lanza su propia aplicación móvil</h3>
-                <p class="col-9 mx-auto text-center text-black fw-bold" style="filter: drop-shadow(0 0 10px rgb(255, 255, 255));">La radio del instituto acaba de lanzar su propia aplicación móvil, permitiendo a los oyentes escuchar la emisora en cualquier momento y lugar.</p>
+                <h3 class="col-10 mx-auto text-center text-white fw-bold w-75" >La radio del instituto lanza su propia aplicación móvil</h3>
+                <p class="col-9 mx-auto text-center text-white fw-bold">La radio del instituto acaba de lanzar su propia aplicación móvil, permitiendo a los oyentes escuchar la emisora en cualquier momento y lugar.</p>
               </div>
               <div class="col-lg-6 col-12 float-start custom-img d-flex flex-column justify-content-end" style="background-image: url('./img/new6.jpg');">
                 <a class="btn btn-warning col-1 ps-1 pe-1 pt-0 pb-0 mx-auto mb-2">Actual</a>
-                <h3 class="col-12 mx-auto text-center text-black fw-bold" style="filter: drop-shadow(0 0 10px rgb(255, 255, 255));">Estudiantes del Mare Nostrum producen documental sobre la importancia de la música en la vida cotidiana</h3>
-                <p class="col-11 mx-auto text-center text-black fw-bold" style="filter: drop-shadow(0 0 10px rgb(255, 255, 255));">Los estudiantes del instituto han producido un documental sobre la importancia de la música en la vida cotidiana, que se transmitirá en la radio del instituto.</p>
+                <h3 class="col-12 mx-auto text-center text-white fw-bold w-75">Estudiantes del Mare Nostrum producen documental sobre la importancia de la música</h3>
+                <p class="col-11 mx-auto text-center text-white fw-bold">Los estudiantes del instituto han producido un documental sobre la importancia de la música en la vida cotidiana, que se transmitirá en la radio del instituto.</p>
               </div>
             </div>
           </div>
@@ -153,18 +178,40 @@
           </button>
         </div>
       </div>
-      <div id="programas" class="mt-5 container">
-        <div class="w-100 border-bottom border-3 border-light">
-          <h2 class="text-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">TEMPORADA 1</h2>
-          <ul class="dropdown-menu">
-            <li class="dropdown text-center"><a class="text-decoration-none" href="#">TEMPORADA 1</a></li>
-            
-          </ul>
+      <div class="accordion" id="temporadasAccordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Temporada 1
+              </button>
+            </h2>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#temporadasAccordion">
+            <div class="card-body">
+              Información sobre la temporada 1
+            </div>
+          </div>
         </div>
-        <div class="w-100 border-bottom border-3 border-light">
-          <h2 class="text-light">TEMPORADA 2</h2>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Temporada 2
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#temporadasAccordion">
+            <div class="card-body">
+              Información sobre la temporada 2
+            </div>
+          </div>
         </div>
+        <!-- Agrega más secciones para cada temporada -->
       </div>
+      
+      
     </div>
     
 </body>
