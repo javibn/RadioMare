@@ -4,111 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
-    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <style>
-      .nav-link:hover {
-        letter-spacing: 5px;
-        transition: .5s;
-      }
-      .row{
-        margin: 0px;
-      }
-      .custom-img {
-        height: 300px;
-        object-fit:cover;
-        
-      }
-      .custom-img a{
-        height: auto;
-      }
-      .dropdown a{
-        color: #ffffff;
-        text-decoration: none;
-        list-style: none;
-      }
-      .dropdown a:hover{
-        color: #2F2F2F;
-      }
-      .dropdown:hover{
-        background-color: white;
-      }
-      .bg-cover {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        min-height: 40vh;
-        padding-top: 1rem;
-      }
-      .accordion .card {
-  background-color: transparent;
-  border: none;
-}
+    <script src="https://kit.fontawesome.com/7541d1b2cb.js" crossorigin="anonymous"></script>
 
-.accordion .card-header {
-  background-color: white;
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.accordion .card-header h2 {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.accordion .card-header button {
-  color: #333;
-  text-decoration: none;
-  width: 100%;
-}
-
-.accordion .card-body {
-  background-color: #f5f5f5;
-  padding: 1.5rem;
-}
-    </style>
     <link rel="shortcut icon"
     href="img/logo.png"
     type="image/x-icon">
     <title>ONDA MARE</title>
+    <style>
+    </style>
 </head>
 <body class="row m-0 ">
 
-    <header class="col-lg-2 col-2 border-end border-3 border-warning sticky-top" style="background-color: #2F2F2F; height: 100vh;">
-        <img src="./img/logo.png" class="col-lg-4 col-10 offset-1 offset-lg-4 mt-3 border-bottom border-2 border-warning pb-3 mb-3">
-        <!--<hr color="red">-->
-        <nav class="navbar navbar-collapse">
-          <ul class="navbar-nav container-fluid">
-            <li class="nav-item align-items-center container-fluid text-center mb-2">
-              <a class="nav-link text-uppercase text-light border-bottom border-2 border-warning fw-bold fs-5" href="#inicio">Inicio</a>
-            </li>
-            <li class="nav-item align-items-center container-fluid text-center mb-2">
-              <a class="nav-link text-uppercase text-light border-bottom border-2 border-warning fw-bold fs-5" href="#noticias">Noticias</a>
-            </li>
+  <div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-xxl-1 col-2 px-sm-2 px-0 bg-dark border-end border-2">
+            <div class="d-flex flex-column align-items-center mx-lg-1 mx-0  pt-3 text-white min-vh-100">
+                <a href="/" class="d-flex align-items-center mb-3">
+                  <img src="./img/logo.png" class="col-xxl-12 col-xl-7 col-lg-8 col-10  mx-auto">
+                </a>
+                <ul class="nav nav-pills flex-column m-0 p-0 align-items-center align-items-sm-start container-fluid" >
+                  <li class="container-fluid m-0 p-0 d-flex">
+                    <a href="" class="nav-link text-light px-0 align-middle mx-auto">
+                      <div class="w-100 align-items-center d-flex mb-2 mt-2">
+                        <i class="fa-solid fa-house mx-auto"></i>
+                      </div>
+                      <span class="ps-0 d-none d-sm-inline">INICIO</span>
+                    </a>
+                  </li>
+                  <hr class="bg-light container-fluid m-0 p-0">
+                  <li class="container-fluid m-0 p-0 d-flex">
+                    <a href="" class="nav-link text-light px-0 align-middle mx-auto">
+                      <div class="w-100 align-items-center d-flex mb-2 mt-2">
+                        <i class="fa-solid fa-newspaper mx-auto"></i>
+                      </div>
+                      <span class="ps-0 d-none d-sm-inline">NOTICIAS</span>
+                    </a>
+                  </li>
+                  <hr class="bg-light container-fluid p-0 m-0">
 
-            
-            <li class="nav-item align-items-center container-fluid text-center mb-2">
-              <a class="nav-link text-uppercase text-light dropdown-toggle border-bottom border-2 border-warning fw-bold fs-5" href="#" data-bs-toggle="dropdown" aria-expanded="false">Programas</a>
-                <ul class="dropdown-menu border border-2 border-warning border-top-0 bg-dark row">
-                  <li class="dropdown text-center"><a class="text-decoration-none" href="#">TEMPORADA 1</a></li>
-                  <li><hr class="dropdown-divider bg-warning"></li>
-                  <li class="dropdown text-center"><a class="text-decoration-none" href="#">TEMPORADA 2</a></li>
-                  <li><hr class="dropdown-divider bg-warning"></li>
-                  <li class="dropdown text-center"><a class="text-decoration-none" href="#">TEMPORADA 3</a></li>
-                  <li><hr class="dropdown-divider bg-warning"></li>
-                  <li class="dropdown text-center"><a class="text-decoration-none" href="#">TEMPORADA 4</a></li>
-                </ul>
-            </li>
-            <li class="nav-item align-items-center container-fluid text-center mb-2">
-              <a class="nav-link text-uppercase text-light border-bottom border-2 border-warning fw-bold fs-5" href="#">Contacto</a>
-            </li>
-          </ul>
-        </nav> 
-     
-    </header>
+                  <li class="container-fluid m-0 p-0 d-flex">
+                    <a href="" class="nav-link text-light px-0 mx-auto">
+                      <div class="w-100 align-items-center d-flex mb-2 mt-2">
+                        <i class="fa-solid fa-podcast mx-auto"></i>
+                      </div>
+                      <span class="ps-0 d-none d-sm-inline">PROGRAMAS</span>
+                    </a>
+                  </li>
+                  <li class="container-fluid m-0 p-0 d-flex temporada">
+                    <a href="" class="nav-link text-light px-0 mx-auto">
+                      <span>P1</span>
+                    </a>
+                  </li>
+                  <li class="container-fluid m-0 p-0 d-flex temporada">
+                    <a href="" class="nav-link text-light px-0 mx-auto">
+                      <span>P2</span>
+                    </a>
+                  </li>
+                  <hr class="bg-light container-fluid p-0 m-0">
+
+                  <li class="container-fluid m-0 p-0 d-flex">
+                    <a href="" class="nav-link text-light px-0 align-middle mx-auto">
+                      <div class="w-100 align-items-center d-flex mb-2 mt-2">
+                        <i class="fa-solid fa-envelope mx-auto"></i>
+                      </div>
+                      <span class="ps-0 d-none d-sm-inline">CONTACTO</span>
+                    </a>
+                  </li>
+                  <hr class="bg-light container-fluid p-0 m-0">
+                    
+            </div>
+        </div>
+        <div class="col p-0 pt-3 bg-dark">
+          <div class="row container-fluid mx-auto align-items-center" style="background-image: url('./img/carrusel\ \(2\).jpg');">
+            <div class="col-lg-2 offset-lg-0 col-4 offset-4 order-lg-1 order-2  text-center pt-3">
+              <img src="./img/portada.png" class="img-fluid mb-0 w-100 rounded-top">
+              <audio controls class="w-100 border border-2 bg-light rounded-bottom">
+                <source src="./img/musica.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+            <div class="col-lg-6 offset-lg-1 fw-bold col-10 offset-1 pt-3 order-lg-2 order-1 text-light text-center" style="filter: drop-shadow(0 0 30px rgb(0, 0, 0));">
+              <h1>Bienvenidos a Radio Mare</h1>
+              <p class="fs-5">La emisora del Instituto 
+                IES Mare Nostrum. Aquí podrás encontrar una amplia variedad de programas y música 
+                para todos los gustos. ¡No te pierdas nuestra programación en vivo!</p>
+            </div>
+            <div class="col-lg-2 offset-lg-1 pt-3 pb-3 d-flex justify-content-center order-lg-3 order-3 align-items-center">
+              <button class="btn btn-primary">VER MÁS CAPITULOS</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
 
     <div class="col-lg-10 col-10 bg-dark p-0">
-      <div class="container-fluid bg-cover d-flex align-items-center" id="inicio" style="background-image: url('./img/carrusel\ \(2\).jpg');">
+      <div class="container-fluid bg-cover d-flex align-items-center" id="inicio" >
           <div class="row container mx-auto align-items-center">
             <div class="col-lg-2 offset-lg-0 col-4 offset-4 order-lg-1 order-2  text-center pt-3">
               <img src="./img/portada.png" class="img-fluid mb-0 w-100 rounded-top">
@@ -123,7 +115,7 @@
                 para todos los gustos. ¡No te pierdas nuestra programación en vivo!</p>
             </div>
             <div class="col-lg-2 offset-lg-1 pt-3 pb-3 d-flex justify-content-center order-lg-3 order-3 align-items-center">
-              <button class="btn btn-light">VER MÁS CAPITULOS</button>
+              <button class="btn btn-primary">VER MÁS CAPITULOS</button>
             </div>
           </div>
       </div>
