@@ -23,68 +23,70 @@
       }
     </style>
 </head>
-<body class="row m-0 overflow-hidden">
-
+<body class="row m-0 low-hidden">
+  <audio controls class="d-none" autoplay>
+    <source src="" type="audio/mpeg">
+  </audio>
   <div class="container-fluid">
     <div class="row flex-nowrap">
-        <div class="col-xxl-1 col-2 px-sm-2 px-0 bg-dark border-end border-2">
-            <div class="d-flex flex-column align-items-center mx-lg-1 mx-0  pt-3 text-white min-vh-100">
-                <a href="#inicio" class="d-flex align-items-center mb-3">
-                  <img src="./img/logo.png" class="col-xxl-12 col-xl-7 col-lg-8 col-10  mx-auto">
-                </a>
-                <ul class="nav nav-pills flex-column m-0 p-0 align-items-center align-items-sm-start container-fluid" >
-                  <li class="container-fluid m-0 p-0 d-flex">
-                    <a href="#inicio" class="nav-link text-light px-0 align-middle mx-auto">
-                      <div class="w-100 align-items-center d-flex mb-2 mt-2">
-                        <i class="fa-solid fa-house mx-auto"></i>
-                      </div>
-                      <span class="ps-0 d-none d-sm-inline">INICIO</span>
-                    </a>
-                  </li>
-                  <hr class="bg-light container-fluid m-0 p-0">
-                  <li class="container-fluid m-0 p-0 d-flex">
-                    <a href="" class="nav-link text-light px-0 align-middle mx-auto">
-                      <div class="w-100 align-items-center d-flex mb-2 mt-2">
-                        <i class="fa-solid fa-newspaper mx-auto"></i>
-                      </div>
-                      <span class="ps-0 d-none d-sm-inline">NOTICIAS</span>
-                    </a>
-                  </li>
-                  <hr class="bg-light container-fluid p-0 m-0">
+      <div class="col-xxl-1 col-2 px-sm-2 px-0 bg-dark border-end border-2 h-100 sticky-top">
+          <div class="d-flex flex-column align-items-center mx-lg-1 mx-0  pt-3 text-white min-vh-100">
+              <a href="#inicio" class="d-flex align-items-center mb-3">
+                <img src="./img/logo.png" class="col-xxl-12 col-xl-7 col-lg-8 col-10  mx-auto">
+              </a>
+              <ul class="nav nav-pills flex-column m-0 p-0 align-items-center align-items-sm-start container-fluid" >
+                <li class="container-fluid m-0 p-0 d-flex">
+                  <a href="#inicio" class="nav-link text-light px-0 align-middle mx-auto">
+                    <div class="w-100 align-items-center d-flex mb-2 mt-2">
+                      <i class="fa-solid fa-house mx-auto"></i>
+                    </div>
+                    <span class="ps-0 d-none d-sm-inline">INICIO</span>
+                  </a>
+                </li>
+                <hr class="bg-light container-fluid m-0 p-0">
+                <li class="container-fluid m-0 p-0 d-flex">
+                  <a href="#noticias" class="nav-link text-light px-0 align-middle mx-auto">
+                    <div class="w-100 align-items-center d-flex mb-2 mt-2">
+                      <i class="fa-solid fa-newspaper mx-auto"></i>
+                    </div>
+                    <span class="ps-0 d-none d-sm-inline">NOTICIAS</span>
+                  </a>
+                </li>
+                <hr class="bg-light container-fluid p-0 m-0">
 
-                  <li class="container-fluid m-0 p-0 d-flex">
-                    <a href="" class="nav-link text-light px-0 mx-auto">
-                      <div class="w-100 align-items-center d-flex mb-2 mt-2">
-                        <i class="fa-solid fa-podcast mx-auto"></i>
-                      </div>
-                      <span class="ps-0 d-none d-sm-inline">PROGRAMAS</span>
-                    </a>
-                  </li>
-                  <li class="container-fluid m-0 p-0 d-flex temporada">
-                    <a href="" class="nav-link text-light px-0 mx-auto">
-                      <span>P1</span>
-                    </a>
-                  </li>
-                  <li class="container-fluid m-0 p-0 d-flex temporada">
-                    <a href="" class="nav-link text-light px-0 mx-auto">
-                      <span>P2</span>
-                    </a>
-                  </li>
-                  <hr class="bg-light container-fluid p-0 m-0">
+                <li class="container-fluid m-0 p-0 d-flex">
+                  <a href="#programas" class="nav-link text-light px-0 mx-auto">
+                    <div class="w-100 align-items-center d-flex mb-2 mt-2">
+                      <i class="fa-solid fa-podcast mx-auto"></i>
+                    </div>
+                    <span class="ps-0 d-none d-sm-inline">PROGRAMAS</span>
+                  </a>
+                </li>
+                <li class="container-fluid m-0 p-0 d-flex temporada">
+                  <a href="#mv" class="nav-link text-light px-0 mx-auto">
+                    <span>MV</span>
+                  </a>
+                </li>
+                <li class="container-fluid m-0 p-0 d-flex temporada">
+                  <a href="#hxh" class="nav-link text-light px-0 mx-auto">
+                    <span>HXH</span>
+                  </a>
+                </li>
+                <hr class="bg-light container-fluid p-0 m-0">
 
-                  <li class="container-fluid m-0 p-0 d-flex">
-                    <a href="" class="nav-link text-light px-0 align-middle mx-auto">
-                      <div class="w-100 align-items-center d-flex mb-2 mt-2">
-                        <i class="fa-solid fa-envelope mx-auto"></i>
-                      </div>
-                      <span class="ps-0 d-none d-sm-inline">CONTACTO</span>
-                    </a>
-                  </li>
-                  <hr class="bg-light container-fluid p-0 m-0">
-                    
-            </div>
-        </div>
-        <div class="col p-0 bg-dark overflow-y-scroll">
+                <li class="container-fluid m-0 p-0 d-flex">
+                  <a href="#contacto" class="nav-link text-light px-0 align-middle mx-auto">
+                    <div class="w-100 align-items-center d-flex mb-2 mt-2">
+                      <i class="fa-solid fa-envelope mx-auto"></i>
+                    </div>
+                    <span class="ps-0 d-none d-sm-inline">CONTACTO</span>
+                  </a>
+                </li>
+                <hr class="bg-light container-fluid p-0 m-0">
+                  
+          </div>
+      </div>
+        <div class="col p-0 bg-dark">
           <div class="row container-fluid mx-auto align-items-center pb-3" style="background: linear-gradient(70deg, #212529, #004AAD);" id="inicio">
             <div class="col-xl-2 offset-xl-1 col-md-4 col-sm-6 col-8 mx-auto order-xl-1 order-2  text-center pt-3">
               <img src="./img/P1.png" class="img-fluid mb-0 w-100 rounded-top">
@@ -99,20 +101,212 @@
                 para todos los gustos. ¡No te pierdas nuestra programación en vivo!</p>
             </div>
             <div class="col-xl-2 offset-xl-1 pt-4 pb-3 d-flex justify-content-center order-lg-3 order-3 align-items-center">
-              <button class="btn btn-warning col-xl-12 col-md-6 col-10">VER MÁS CAPITULOS</button>
+              <a href="#programas" class="btn btn-warning col-xl-12 col-md-6 col-10 fw-bold">VER MÁS CAPITULOS</a>
             </div>
           </div>
 
           <div id="noticias" class="mt-4 container">
             <h2 class="text-light">Trending News</h2>
             <hr class="border border-warning border-2 opacity-50">
+            <div class="row p-0 m-0">
+              <div class="col-lg-3 p-0 row m-0">
+                <div class="col-lg-12 col-md-6 border border-dark border-4 row m-0 align-items-end noticia pb-3" style="background-image: url('img/new1.jpeg');background-repeat: no-repeat;background-size: cover;">
+                  <div class="p-0">
+                    <h6 class="text-light bg-danger p-1 w-25 ms-3 text-center rounded mb-2">TOP</h6>
+                    <h4 class="text-light text-center" style="background-color: rgba(0, 0, 0, 0.5);">Radio Mare gana premio a la mejor radio escolar</h4>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-6 border border-dark border-4 row m-0 align-items-end noticia pb-3" style="background-image: url('img/new2.jpg'); background-repeat: no-repeat;background-size: cover;">
+                  <div class="p-0">
+                    <h6 class="text-light bg-primary p-1 w-25 ms-3 text-center rounded mb-2">TEC</h6>
+                    <h4 class="text-light text-center" style="background-color: rgba(0, 0, 0, 0.5);">Programa de entrevistas con expertos en tecnología</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 p-0">
+                <div id="carouselExampleAutoplaying" class="carousel slide h-100" data-bs-ride="carousel">
+                  <div class="carousel-inner h-100">
+                    <div class="carousel-item h-100 noticiaCarrusel pt-5 pb-5" style="background-image: url('img/new5.jpg'); background-repeat: no-repeat;background-size: cover;">
+                      <div class="w-75 mx-auto mt-5">
+                        <h6 class="text-light bg-primary p-1 w-25 ms-3 text-center rounded mb-3">TEC</h6>
+                        <h4 class="text-light text-center mx-auto p-2 mb-4 rounded" style="background-color: rgba(0, 0, 0, 0.5);">La radio del instituto lanza su propia aplicación móvil</h4>
+                        <h5 class="text-light w-75 mx-auto text-center rounded p-2" style="background-color: rgba(0, 0, 0, 0.5);">La radio del instituto acaba de lanzar su propia aplicación móvil, permitiendo a los oyentes escuchar la emisora en cualquier momento y lugar.</h5>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item active h-100 noticiaCarrusel pt-5 pb-5" style="background-image: url('img/new6.jpg'); background-repeat: no-repeat;background-size: cover;">
+                      <div class="w-75 mx-auto mt-5">
+                        <h6 class="text-light bg-musica p-1 w-25 ms-3 text-center rounded mb-3">MUS</h6>
+                        <h4 class="text-light text-center mx-auto p-2 mb-4 rounded" style="background-color: rgba(0, 0, 0, 0.5);">Estudiantes del Mare Nostrum producen documental sobre la importancia de la música</h4>
+                        <h5 class="text-light w-75 mx-auto text-center rounded p-2" style="background-color: rgba(0, 0, 0, 0.5);">Los estudiantes del instituto han producido un documental sobre la importancia de la música en la vida cotidiana, que se transmitirá en la radio del instituto.</h5>
+                      </div>
+                    </div>
+                    
+                    <div class="carousel-item h-100 noticiaCarrusel pt-5 pb-5" style="background-image: url('img/new7.jpg'); background-repeat: no-repeat;background-size: cover;">
+                      <div class="w-75 mx-auto mt-5">
+                        <h6 class="text-light bg-secondary p-1 w-25 ms-3 text-center rounded mb-3">ENT</h6>
+                        <h4 class="text-light text-center mx-auto p-2 mb-4 rounded" style="background-color: rgba(0, 0, 0, 0.7);">Radio Mare presenta nuevo equipo de locutores</h4>
+                        <h5 class="text-light w-75 mx-auto text-center rounded p-2" style="background-color: rgba(0, 0, 0, 0.7);">La emisora está emocionada de presentar su nuevo equipo de locutores. Con una amplia variedad de habilidades y experiencias, este equipo está listo para llevar la emisora a un nuevo nivel.</h5>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="col-lg-3 p-0 row m-0">
+                <div class="col-lg-12 col-md-6 border border-dark border-4 row m-0 align-items-end noticia pb-3" style="background-image: url('img/new3.jpg');background-repeat: no-repeat;background-size: cover;">
+                  <div class="p-0">
+                    <h6 class="text-light bg-success p-1 w-25 ms-3 text-center rounded mb-2">LOC</h6>
+                    <h4 class="text-light text-center " style="background-color: rgba(0, 0, 0, 0.5);">Mare Nostrum produce y presenta su propio programa de radio</h4>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-md-6 border border-dark border-4 row m-0 align-items-end noticia pb-3" style="background-image: url('img/new4.jpg'); background-repeat: no-repeat;background-size: cover;">
+                  <div class="p-0">
+                    <h6 class="text-light bg-secondary p-1 w-25 ms-3 text-center rounded mb-2">ENT</h6>
+                    <h4 class="text-light text-center" style="background-color: rgba(0, 0, 0, 0.5);">La radio del instituto transmite en vivo el acto de graduación</h4>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+
+          <div id="programas" class="mt-5 container">
+            <h2 class="text-light">Programas</h2>
+            <hr class="border border-warning border-2 opacity-50">
+
+            <div class="accordion col-lg-8 mx-auto" id="accordionExample">
+              <div class="accordion-item border-warning" id="mv">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button row m-0 " style="background: linear-gradient(70deg, #212529, #004AAD);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <img class="col-lg-2 col-sm-4 col-6" src="img/P1.png">
+                    <div class="col-sm-6 col-5 offset-lg-1">
+                      <h4 class="text-center text-light">MI VOZ</h4>
+                      <h6 class="text-center text-light">Antonio Acosta</h6>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show border border-warning" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body text-light bg-dark">
+                    <p class="col-10 text-center mx-auto fs-5 mb-2">El programa 'Mi Voz' es un espacio dedicado a la música y la cultura, conducido por 
+                      el talentoso Antonio Acosta. En cada episodio, Antonio comparte su vasto conocimiento y pasión por la música, además 
+                      de entrevistar a artistas y personalidades locales.</p>
+                      <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active ">
+                            <img class="col-lg-2 col-8 offset-2 offset-lg-5" src="img/P1C1.png">
+                            <div class="col-10 offset-1 pb-4 pt-3">
+                              <h5 class="text-center">La música clásica: una joya inmortal</h5>
+                              <p class="text-center">La música clásica en la radio del instituto: aprendiendo sobre los géneros clásicos</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item ">
+                            <img class="col-lg-2 col-8 offset-2 offset-lg-5" src="img/P1C2.png">
+                            <div class="col-10 offset-1 pb-4 pt-3">
+                              <h5 class="text-center">Entrevista con una estrella emergente del rock</h5>
+                              <p class="text-center">Entrevista con una estrella emergente del rock en la radio de nuestro instituto</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item ">
+                            <img class="col-lg-2 col-8 offset-2 offset-lg-5" src="img/P1C3.png">
+                            <div class="col-10 offset-1 pb-4 pt-3">
+                              <h5 class="text-center">El hip hop en la radio del instituto</h5>
+                              <p class="text-center">Descubriendo la evolución y significado del hip hop en la radio del instituto</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-warning" id="hxh">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed row m-0" style="background: linear-gradient(70deg, #212529, #004AAD);" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <img class="col-lg-2 col-sm-4 col-6" src="img/P2.png">
+                    <div class="col-sm-6 col-5 offset-lg-1">
+                      <h4 class="text-center text-light">HOY X HOY</h2>
+                      <h6 class="text-center text-light">Sonia Gisbert</h5>
+                    </div>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body bg-dark text-light" >
+                    <p class="col-10 text-center mx-auto fs-5 mb-2">El programa 'Hoy por Hoy' es el lugar perfecto para mantenerse informado
+                       sobre lo que está sucediendo en el mundo. Conducido por la talentosa Sonia Gisbert, este programa ofrece noticias de 
+                       última hora, entrevistas con expertos y discusiones sobre los temas más importantes del día.</p>
+                    <div id="carouselExampleIndicators1" class="carousel slide">
+                      <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                      <div class="carousel-inner">
+                        <div class="carousel-item active ">
+                          <img class="col-lg-2 col-8 offset-2 offset-lg-5" src="img/P2C1.png">
+                          <div class="col-10 offset-1 pb-4 pt-3">
+                            <h5 class="text-center">La actualidad en el instituto</h5>
+                            <p class="text-center">Noticias relevantes del instituto contadas por una experta en temas de actualidad</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item ">
+                          <img class="col-lg-2 col-8 offset-2 offset-lg-5" src="img/P2C2.png">
+                          <div class="col-10 offset-1 pb-4 pt-3">
+                            <h5 class="text-center">La tecnología en el instituto</h5>
+                            <p class="text-center">Toda una recopilación de la tecnología que usan y desarrollan nuestros alumnos</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item ">
+                          <img class="col-lg-2 col-8 offset-2 offset-lg-5" src="img/P2C3.png">
+                          <div class="col-10 offset-1 pb-4 pt-3">
+                            <h5 class="text-center">El deporte en el instituto</h5>
+                            <p class="text-center">Resumen de la liga de los patios y entrenos en la horas de educacion física</p>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div id="contacto" class="mt-5 container">
+            <h2 class="text-light">Contáctanos</h2>
+            <hr class="border border-warning border-2 opacity-50">
           </div>
 
         </div>
     </div>
 </div>
-
-<
 
     
 </body>
