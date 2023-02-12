@@ -86,7 +86,7 @@
                   
           </div>
       </div>
-        <div class="col p-0 bg-dark">
+        <div class="col p-0 bg-dark m-0">
           <div class="row container-fluid mx-auto align-items-center pb-3" style="background: linear-gradient(70deg, #212529, #004AAD);" id="inicio">
             <div class="col-xl-2 offset-xl-1 col-md-4 col-sm-6 col-8 mx-auto order-xl-1 order-2  text-center pt-3">
               <img src="./img/P1.png" class="img-fluid mb-0 w-100 rounded-top">
@@ -299,11 +299,99 @@
             </div>
           </div>
           
-          <div id="contacto" class="mt-5 container">
+          <div id="contacto" class="mt-5 container mb-5">
             <h2 class="text-light">Contáctanos</h2>
             <hr class="border border-warning border-2 opacity-50">
+            <div class="row">
+              <div class="col-lg-6 row align-items-center text-light noticia rounded" style="background-image: url('img/contacto.jpg'); background-repeat: no-repeat;background-size: cover;">
+                <div class="text-center p-2" style="background-color: rgba(0, 0, 0, 0.5);">
+                  <i class="fs-4 fa-solid fa-envelope"></i>
+                  <h6>correo@iesmarenostrum.com</h6>
+                  <h6>03012736@edu.gva.es</h6>
+                </div>
+              </div>
+              <form class="row col-lg-6 p-5 text-light">
+                <div class="col-lg-5 mb-3">
+                  <label for="validationCustom01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="Victor" required>
+                </div>
+                <div class="col-lg-7 mb-3">
+                  <label for="validationCustom02" class="form-label">Apellidos</label>
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Martinez" required>
+                </div>
+                <div class="col-lg-7 mb-3">
+                  <label for="validationCustomUsername" class="form-label">Email</label>
+                  <div class="input-group has-validation ">
+                    <span class="input-group-text" id="inputGroupPrepend"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  </div>
+                </div>
+
+                <div class="col-lg-5">
+                  <label for="validationServer04" class="form-label">Soy</label>
+                  <div class="input-group has-validation ">
+                    <span class="input-group-text" id="inputGroupPrepend"><i class="fa-solid fa-user"></i></span>
+                    <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                      <option selected disabled value="">Elegir...</option>
+                      <option>Alumno</option>
+                      <option>Profesor</option>
+                      <option>Padre/Madre</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="col-12 mb-3">
+                  <label for="validationCustomUsername" class="form-label">Motivo de contacto</label>
+                  <textarea class="form-control" id="validationTextarea" placeholder="Explica aquí tu motivo de contacto, te contestaremos pronto a tu correo" required></textarea>
+                  
+                </div>
+                
+                <div class="col-12 mt-2 mb-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                  </div>
+                </div>
+                <div class="col-auto mx-auto">
+                  <button class="btn btn-warning fw-bold" type="submit">Enviar</button>
+                </div>
+              </form>
+            </div>
           </div>
 
+          <footer class="container-fluid">
+            <hr class="border border-white border-2 opacity-50">
+            <div class="row pb-3 pt-4 col-10  mx-auto">
+              <img src="img/logo.png" class="col-lg-1 col-4 mx-auto">
+              <div class="col-lg-10 row">
+                <h4 class="text-light text-center d-none d-lg-inline col-12">ONDA MARE</h4>
+                <div>
+                  <hr class="border border-warning col-1 mx-auto border-2 opacity-50">
+                </div>
+                <div class="row col-lg-6 col-8 mx-auto">
+                  <div class="col-3 align-items-center d-flex">
+                    <i class="fs-1 mx-auto  fa-brands text-light fa-instagram"></i>
+                  </div>
+                  <div class="col-3 align-items-center d-flex">
+                    <i class="fs-1 mx-auto fa-brands text-light fa-square-facebook"></i>
+                  </div>
+
+                  <div class="col-3 align-items-center d-flex">
+                    <i class="fs-1 mx-auto  fa-brands text-light fa-youtube"></i>
+                  </div>
+                  <div class="col-3 align-items-center d-flex">
+                    <i class="fs-1 mx-auto fa-brands text-light fa-twitter"></i>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-12 bg-black text-light">
+              <p class="text-center m-0">Onda Mare</p>
+            </div>
+          </footer>
         </div>
     </div>
 </div>
