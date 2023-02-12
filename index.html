@@ -14,20 +14,27 @@
     type="image/x-icon">
     <title>ONDA MARE</title>
     <style>
+      @font-face {
+        font-family: 'Montserrat';
+        src: url('/Montserrat/Montserrat-VariableFont_wght.ttf');
+      }
+      *{
+        font-family: 'Montserrat';
+      }
     </style>
 </head>
-<body class="row m-0 ">
+<body class="row m-0 overflow-hidden">
 
   <div class="container-fluid">
     <div class="row flex-nowrap">
         <div class="col-xxl-1 col-2 px-sm-2 px-0 bg-dark border-end border-2">
             <div class="d-flex flex-column align-items-center mx-lg-1 mx-0  pt-3 text-white min-vh-100">
-                <a href="/" class="d-flex align-items-center mb-3">
+                <a href="#inicio" class="d-flex align-items-center mb-3">
                   <img src="./img/logo.png" class="col-xxl-12 col-xl-7 col-lg-8 col-10  mx-auto">
                 </a>
                 <ul class="nav nav-pills flex-column m-0 p-0 align-items-center align-items-sm-start container-fluid" >
                   <li class="container-fluid m-0 p-0 d-flex">
-                    <a href="" class="nav-link text-light px-0 align-middle mx-auto">
+                    <a href="#inicio" class="nav-link text-light px-0 align-middle mx-auto">
                       <div class="w-100 align-items-center d-flex mb-2 mt-2">
                         <i class="fa-solid fa-house mx-auto"></i>
                       </div>
@@ -77,134 +84,36 @@
                     
             </div>
         </div>
-        <div class="col p-0 pt-3 bg-dark">
-          <div class="row container-fluid mx-auto align-items-center" style="background-image: url('./img/carrusel\ \(2\).jpg');">
-            <div class="col-lg-2 offset-lg-0 col-4 offset-4 order-lg-1 order-2  text-center pt-3">
-              <img src="./img/portada.png" class="img-fluid mb-0 w-100 rounded-top">
+        <div class="col p-0 bg-dark overflow-y-scroll">
+          <div class="row container-fluid mx-auto align-items-center pb-3" style="background: linear-gradient(70deg, #212529, #004AAD);" id="inicio">
+            <div class="col-xl-2 offset-xl-1 col-md-4 col-sm-6 col-8 mx-auto order-xl-1 order-2  text-center pt-3">
+              <img src="./img/P1.png" class="img-fluid mb-0 w-100 rounded-top">
               <audio controls class="w-100 border border-2 bg-light rounded-bottom">
                 <source src="./img/musica.mp3" type="audio/mpeg">
               </audio>
             </div>
-            <div class="col-lg-6 offset-lg-1 fw-bold col-10 offset-1 pt-3 order-lg-2 order-1 text-light text-center" style="filter: drop-shadow(0 0 30px rgb(0, 0, 0));">
-              <h1>Bienvenidos a Radio Mare</h1>
+            <div class="col-xl-4 col-md-10 col-11 mx-auto pt-3 order-xl-2 order-1 text-light text-center">
+              <h1 class="mb-3 fs-3" >Onda Mare</h1>
               <p class="fs-5">La emisora del Instituto 
                 IES Mare Nostrum. Aquí podrás encontrar una amplia variedad de programas y música 
                 para todos los gustos. ¡No te pierdas nuestra programación en vivo!</p>
             </div>
-            <div class="col-lg-2 offset-lg-1 pt-3 pb-3 d-flex justify-content-center order-lg-3 order-3 align-items-center">
-              <button class="btn btn-primary">VER MÁS CAPITULOS</button>
+            <div class="col-xl-2 offset-xl-1 pt-4 pb-3 d-flex justify-content-center order-lg-3 order-3 align-items-center">
+              <button class="btn btn-warning col-xl-12 col-md-6 col-10">VER MÁS CAPITULOS</button>
             </div>
           </div>
+
+          <div id="noticias" class="mt-4 container">
+            <h2 class="text-light">Trending News</h2>
+            <hr class="border border-warning border-2 opacity-50">
+          </div>
+
         </div>
     </div>
 </div>
 
-    <div class="col-lg-10 col-10 bg-dark p-0">
-      <div class="container-fluid bg-cover d-flex align-items-center" id="inicio" >
-          <div class="row container mx-auto align-items-center">
-            <div class="col-lg-2 offset-lg-0 col-4 offset-4 order-lg-1 order-2  text-center pt-3">
-              <img src="./img/portada.png" class="img-fluid mb-0 w-100 rounded-top">
-              <audio controls class="w-100 border border-2 bg-light rounded-bottom">
-                <source src="./img/musica.mp3" type="audio/mpeg">
-              </audio>
-            </div>
-            <div class="col-lg-6 offset-lg-1 fw-bold col-10 offset-1 pt-3 order-lg-2 order-1 text-light text-center" style="filter: drop-shadow(0 0 30px rgb(0, 0, 0));">
-              <h1>Bienvenidos a Radio Mare</h1>
-              <p class="fs-5">La emisora del Instituto 
-                IES Mare Nostrum. Aquí podrás encontrar una amplia variedad de programas y música 
-                para todos los gustos. ¡No te pierdas nuestra programación en vivo!</p>
-            </div>
-            <div class="col-lg-2 offset-lg-1 pt-3 pb-3 d-flex justify-content-center order-lg-3 order-3 align-items-center">
-              <button class="btn btn-primary">VER MÁS CAPITULOS</button>
-            </div>
-          </div>
-      </div>
-      <div class="container mt-4" id="noticias">
-        <h2 class="text-light">Noticias</h2>
-        <div id="carouselExampleAutoplaying" class="carousel slide w-100 mx-auto mt-3" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="col-lg-6 col-12 float-start custom-img border-end border-4 border-dark d-flex flex-column justify-content-end" style="background-image: url('./img/new1.jpg');">
-                <a class="btn btn-success col-1 ps-0 pe-5 pt-0 pb-0 mx-auto mb-2">Nuevo</a>
-                <h3 class="col-10 mx-auto text-center text-white w-75">Radio Mare gana premio a la mejor radio escolar</h3>
-                <p class="col-9 mx-auto text-center text-white">La radio del instituto IES Mare Nostrum ha sido reconocida como la mejor radio escolar del país en una competición nacional de radios estudiantiles.</p>
-              </div>
-              <div class="col-lg-6 col-12 float-start custom-img d-flex flex-column justify-content-end" style="background-image: url('./img/new2.jpg');">
-                <a class="btn btn-warning col-1 ps-1 pe-1 pt-0 pb-0 mx-auto mb-2">Actual</a>
-                <h3 class="col-12 mx-auto text-center text-white w-75">Programa de entrevistas con expertos en tecnología</h3>
-                <p class="col-11 mx-auto text-center text-white">La radio del instituto está lanzando un nuevo programa en el que se entrevistará a expertos en tecnología para brindar a los estudiantes una visión detrás de las últimas tendencias y desarrollos.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-lg-6 col-12 float-start custom-img border-end border-4 border-dark d-flex flex-column justify-content-end" style="background-image: url('./img/new3.jpg');">
-                <a class="btn btn-success col-1 ps-0 pe-5 pt-0 pb-0 mx-auto mb-2">Nuevo</a>
-                <h3 class="col-10 mx-auto text-center text-white w-75">Estudiantes del IES Mare Nostrum producen y presentan su propio programa de radio</h3>
-                <p class="col-9 mx-auto text-center text-white ">Los estudiantes del instituto están teniendo la oportunidad de producir y presentar su propio programa de radio, dando a conocer sus habilidades y conocimientos a una audiencia más amplia.</p>
-              </div>
-              <div class="col-lg-6 col-12 float-start custom-img d-flex flex-column justify-content-end" style="background-image: url('./img/new4.jpg');">
-                <a class="btn btn-warning col-1 ps-1 pe-1 pt-0 pb-0 mx-auto mb-2">Actual</a>
-                <h3 class="col-12 mx-auto text-center text-white  w-75">La radio del instituto transmite en vivo el acto de graduación</h3>
-                <p class="col-11 mx-auto text-center text-white">La radio del instituto estará transmitiendo en vivo el acto de graduación, permitiendo a familiares y amigos que no puedan asistir en persona seguir la celebración desde cualquier lugar del mundo.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="col-lg-6 col-12 float-start custom-img border-end border-4 border-dark d-flex flex-column justify-content-end" style="background-image: url('./img/new5.jpg');">
-                <a class="btn btn-danger col-1 ps-0 pe-1 pt-0 pb-0 mx-auto mb-2">Viejo</a>
-                <h3 class="col-10 mx-auto text-center text-white fw-bold w-75" >La radio del instituto lanza su propia aplicación móvil</h3>
-                <p class="col-9 mx-auto text-center text-white fw-bold">La radio del instituto acaba de lanzar su propia aplicación móvil, permitiendo a los oyentes escuchar la emisora en cualquier momento y lugar.</p>
-              </div>
-              <div class="col-lg-6 col-12 float-start custom-img d-flex flex-column justify-content-end" style="background-image: url('./img/new6.jpg');">
-                <a class="btn btn-warning col-1 ps-1 pe-1 pt-0 pb-0 mx-auto mb-2">Actual</a>
-                <h3 class="col-12 mx-auto text-center text-white fw-bold w-75">Estudiantes del Mare Nostrum producen documental sobre la importancia de la música</h3>
-                <p class="col-11 mx-auto text-center text-white fw-bold">Los estudiantes del instituto han producido un documental sobre la importancia de la música en la vida cotidiana, que se transmitirá en la radio del instituto.</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-      <div class="accordion" id="temporadasAccordion">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                Temporada 1
-              </button>
-            </h2>
-          </div>
-      
-          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#temporadasAccordion">
-            <div class="card-body">
-              Información sobre la temporada 1
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header" id="headingTwo">
-            <h2 class="mb-0">
-              <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                Temporada 2
-              </button>
-            </h2>
-          </div>
-          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#temporadasAccordion">
-            <div class="card-body">
-              Información sobre la temporada 2
-            </div>
-          </div>
-        </div>
-        <!-- Agrega más secciones para cada temporada -->
-      </div>
-      
-      
-    </div>
+<
+
     
 </body>
 </html>
